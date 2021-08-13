@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon Poudyal - Research </title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is a portfolio website">
+	<meta name="keywords" content="portfolio, CV, Blog, Research, Contact">
+	<meta name="author" content="Simon Poudyal">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../javascript/javascript.js"></script>
+	<style>
+		/*creating two divs for image and content*/
+		.left{
+			width: 40%;
+			height: 80%;
+			display: block;
+			position: absolute;
+			float: left;
+			margin-top: 150px;
+		}
+		.right{
+			width: 60%;
+			height: 100%;
+			float: right;
+			position: relative;
+			display: block;
+			color: #373737;
+		}
+		/*div for image*/
+
+
+		.left img{
+			height: 100%;
+			width: 100%;
+			border-radius: 30%;
+		}
+		/*styling the content div*/
+		.right .research{
+			display: block;
+			padding: 10px;
+			margin: 10px;
+			border: 2px solid #e9e7da;
+			border-radius: 20%;
+			height: 920px;
+			font-size: 20px;
+			font-family: cursive;
+			background-color: #e9e7da;
+
+		}
+		.right .research h2{
+			text-align: center;
+			padding: 10px;
+		}
+		.right p{
+			padding: 10px;
+			position: absolute;
+		}
+		
+		/*styling the image div*/
+		
+		.images{
+			width: 100%;
+			height: 30%;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.images a{
+			width: 45%;
+			height: 100%;
+			margin-top: 20px;
+		}
+		/*styling the image*/
+		.images img{
+			
+			width: 100%;
+			height: 100%;
+		}
+
+		
+		/*styling table and buttons*/
+		table{
+			margin-left: 100px;
+		}
+			table td{
+			padding: 20px;
+
+		}
+		table td button{
+	
+			background-color: #eeaa7b;
+			color: #373737;
+			font-size: 15px;
+			height: 35px;
+			margin-top: 20px;
+			cursor: pointer;	
+			padding: 10px;
+			border-radius: 40%;
+		
+		}
+		table td button:hover{
+			background-color: #e37222;
+			color: white;
+			transition: 0.3s;
+		}
+		/*classes to hide/show content*/
+		.show{
+			display: block;
+		}
+		.hide{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<!-- navigation bar -->
+		<section class="nav">
+			<div class="logo">
+				<h1><a href="../index.html">Simon Poudyal</a></h1>
+				<h3>Front-end Developer in practice</h3>
+				
+			</div>
+			<!-- navigation buttons -->
+			<nav>
+       			<a href="../index.html">Home</a>
+       			<a href="cv.html">CV</a>
+        		<a href="blog.html">Blog</a>
+       			<a href="research.html" style="color: #b82601;">research</a>
+        		<a href="contact.html">contact</a>
+     		 </nav>  
+		</section>
+	</header>
+	<!-- main body -->
+	<main style="height: 1100px;">
+		<div class="left">
+			<!-- image div -->
+			<img src="../images/research.png">
+		</div>
+		<div class="right">
+			<!-- content div -->
+			<div class="research">
+				<h2>Research</h2>
+					<div class="buttons">
+						<table>
+							<td><button onclick="research1()">Research 1</button></td>
+							<td><button onclick="research2()">Research 2</button></td>
+							<td><button onclick="research3()">Research 3</button></td>
+							<td><button onclick="research4()">Research 4</button></td>
+							<td><button onclick="research5()">Research 5</button></td>
+						</table>
+						<hr>
+					</div>
+				<!-- research results -->
+				<div id="1" class="show">
+					<div class="images">
+
+					<a href="https://colorlib.com/wp/template/ronin/" target="_blank"><img src="../images/research/homepage.png"></a>
+					
+				
+					<a href="index.html" target="_blank"><img src="../images/research/my homepage.png"></a>
+					
+					</div>
+					<h4>Home Page</h4><br>
+					<p>I took one of the website templates as the reference of my landing page, this particular page has a navigation bar, an image at the left side of the webpage and some text along with a button at the right side of the page. In my website I have made a nagivation bar that is seperated from the main body section, i have used an image at the left side of my webpage and have used three buttons with different border radius, a heading and a short introduction about myself and the website.</p>
+				</div>
+				<div id="2" class="show hide">
+					<div class="images">
+
+					<a href="https://www.loungelizard.com/blog/" target="_blank"><img src="../images/research/header.png"></a>
+					
+				
+					<a href="index.html" target="_blank"><img src="../images/research/my header.png"></a>
+					
+					</div>
+					<h4>Navigation Bar/ Header section</h4><br>
+					<p>I took this website "loungelizard" as a reference for my header section/ my navigation bar. This website contains a logo at the top left of the navigation bar and clickable buttons/internal links to navigate through the website at the right site. In my website, my navigation bar contains a heading(logo) at the top left of the navigation bar and also contains the internal links at the right side of the navigation bar. these buttons are clickable and navigate you through the pages.</p>
+				</div>
+				<div id="3" class="show hide">
+					<div class="images">
+
+					<a href="https://www.thapatechnical.com/" target="_blank"><img src="../images/research/footer.png"></a>
+					
+				
+					<a href="index.html" target="_blank"><img src="../images/research/my footer.png"></a>
+					
+					</div>
+					<h4>Footer section</h4><br>
+					<p>I used this website "thapatechnical" to take reference for the footer section in my website. The footer section in the above shown website contains the links to social media and also to the privacy policy of his website and a copyright section. In my website however, there is absence of the privacy pokicy or any other quick links. My footer contains external links to other social networking websites and a copyright section.</p>
+				</div>
+				<div id="4" class="show hide">
+					<div class="images">
+
+					<a href="https://www.w3schools.com/html/default.asp" target="_blank"><img src="../images/research/buttons.png"></a>
+					
+				
+					<a href="blog.html" target="_blank"><img src="../images/research/my buttons.png"></a>
+					
+					</div>
+					<h4>Use of Buttons</h4><br>
+					<p>This website "w3schools" contains side navigation bar that contains buttons that change the content present in the main division. In my website, i have used buttons in a horizontal way with the help of the table tag., that changes the content in my the division by hiding a division and showing another division.</p>
+				</div>
+				<div id="5" class="show hide">
+					<div class="images">
+
+					<a href="https://islington.edu.np/contact/" target="_blank"><img src="../images/research/contact.png"></a>
+					
+				
+					<a href="contact.html" target="_blank"><img src="../images/research/my contact.png"></a>
+					
+					</div>
+					<h4>Contact Form</h4><br>
+					<p>This website "islington.edu" contains a contact form that requests the user for name, phone number, email and a message along with a captcha form that the user is supposed to fill to prove that he/she is an actual human and not a bot. In my website, i have used the form to take Name, email, gender and message of the user and display alert messages when any feild is left empty.</p>
+				</div>
+			
+		</div>
+		
+
+	</main>
+	<!-- footer -->
+	<footer>
+		<p style="float: left; position: absolute;">Contact me:</p> 
+		<a href="https://www.facebook.com" target="_blank"><img class="footerImage" src="../images/facebook.png"></a>
+		<a href="https://www.instagram.com" target="_blank"><img class="footerImage" src="../images/instagram.png"></a>
+		<a href="https://www.twitter.com" target="_blank"><img class="footerImage" src="../images/twitter.png"></a>
+		<a href="https://www.youtube.com" target="_blank"><img class="footerImage" src="../images/youtube.png"></a>
+
+	<span>&copy; 2020 by Simon Poudyal	</span>
+	</footer>
+
+</body>
+</html>

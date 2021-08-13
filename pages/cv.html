@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon Poufyal - CV</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is a portfolio website">
+	<meta name="keywords" content="portfolio, CV, Blog, Research, Contact">
+	<meta name="author" content="Simon Poudyal">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../javascript/javascript.js"></script>
+	<style>
+		/*creating 2 divs for image and text content*/
+	.left{
+		width: 40%;
+		height: 80%;
+		display: block;
+		position: absolute;
+		float: left;
+	}
+
+	.left img{
+		height: 100%;
+		width: 100%;
+	}
+	.right{
+		width: 60%;
+		height: 100%;
+		float: right;
+		position: relative;
+		display: block;
+		color: #373737;
+	}
+	.right h1{
+		display: block;
+		padding: 20px;
+		font-size: 70px;
+		font-family: 'IM Fell Great Primer SC', serif;
+	}	
+		/*styling the buttons and table*/
+	table td button{
+	
+			background-color: #eeaa7b;
+			color: #373737;
+			font-size: 15px;
+			height: 35px;
+			margin-top: 20px;
+			cursor: pointer;	
+			padding: 10px;
+			border-radius: 40%;
+		
+		}
+		table td button:hover{
+			background-color: #e37222;
+			color: white;
+			transition: 0.3s;
+		}
+		/*styling the text content*/
+		.right .cv{
+			display: block;
+			padding: 10px;
+			margin: 10px;
+			border: 2px solid #e9e7da;
+			border-radius: 20%;
+			height: 600px;
+			font-size: 20px;
+			font-family: cursive;
+			background-color: #e9e7da;
+
+		}
+		.right .cv h2{
+			text-align: center;
+			padding: 10px;
+		}
+	.right p{
+		padding: 10px;
+		position: absolute;
+		
+		/*classes to hide/show content*/
+	}
+	.show{
+		display: block;
+	}
+	.hide{
+		display: none;
+	}
+
+	
+	</style>
+</head>
+<body>
+	<!-- navigation section -->
+	<header>
+		<section class="nav">
+			<div class="logo">
+				<h1><a href="../index.html">Simon Poudyal</a></h1>
+				<h3>Front-end Developer in practice</h3>
+				
+			</div>
+			<nav>
+       			<a href="../index.html">Home</a>
+       			<a href="cv.html" style="color: #b82601;">CV</a>
+        		<a href="blog.html">Blog</a>
+       			<a href="research.html">research</a>
+        		<a href="contact.html">contact</a>
+     		 </nav>  
+		</section>
+	</header>
+	<!-- main body section -->
+	<main>
+		<div class="left">
+			<img src="../images/image1.png">
+		</div>
+		<div class="right">
+			<div class="cv">
+			<div class="buttons">
+
+				<!-- creating table and buttons for CV -->
+
+				<h1>Curriculum Vitae</h1>
+				<table>
+					<td><button onclick="show1()">Personal Information</button></td>
+					<td><button onclick="show2()">Education and Qualification</button></td>
+					<td><button onclick="show3()">Skills</button></td>
+				</table>
+				<hr style="margin-top: 20px;">
+			</div>
+
+			<!-- CV details -->
+
+			<div id="1" class="show">
+				<h4>Personal Information</h4><br>
+				 <p>
+				 	A highly motivated student practicing front-end development. I have high level of motivation for work and and highly focused on what I try. 
+				 	I wish to use the skills i possess to satisfy clients and fulfill their needs.
+				 </p>
+
+			</div>
+
+			<div id="2" class="show hide">
+				<h4>Education and Qualification</h4><br>
+				<p>
+				 <ul style="margin-left: 20px;">
+				 	<li>Currently undergoing under-graduate program in Islington College </li>
+				 	<li>Passed Intermediate from Global College of Management (2018/2019)</li>
+				 	<li>Passed SEE examination from Brihaspati Vidyasadan(2016)</li>
+				 	
+				 </ul>
+				</p>
+			</div>
+
+			<div id="3" class="show hide">
+				<h4>Skills</h4><br>
+				<ul style="margin-left: 20px;">
+					<li>Problem Solving</li>
+					<li>Team Work</li>
+					<li>Time Management</li>
+					<li>Multi-lingual(can fluently speak 4 languages)
+						<ul style="margin-left: 20px;">
+							<li>Nepali (Mother tongue)</li>
+							<li>English</li>
+							<li>Hindi</li>
+							<li>Japanese</li>
+						</ul></li>
+				</ul>
+			</div>
+
+			
+		</div>
+	</div>
+		
+		<!-- footer section -->
+	</main>
+	<footer>
+		<p style="float: left; position: absolute;">Contact me:</p> 
+		<a href="https://www.facebook.com" target="_blank"><img class="footerImage" src="../images/facebook.png"></a>
+		<a href="https://www.instagram.com" target="_blank"><img class="footerImage" src="../images/instagram.png"></a>
+		<a href="https://www.twitter.com" target="_blank"><img class="footerImage" src="../images/twitter.png"></a>
+		<a href="https://www.youtube.com" target="_blank"><img class="footerImage" src="../images/youtube.png"></a>
+
+	<span>&copy; 2020 by Simon Poudyal	</span>
+	</footer>
+
+</body>
+</html>

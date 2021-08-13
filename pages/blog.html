@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon Poudyal - Blog</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is a portfolio website">
+	<meta name="keywords" content="portfolio, CV, Blog, Research, Contact">
+	<meta name="author" content="Simon Poudyal">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../javascript/javascript.js"></script>
+	<style>
+		/*creating 2 divs for image and blog*/
+		.left{
+			width: 40%;
+			height: 80%;
+			display: block;
+			position: absolute;
+			float: left;
+			margin-top: 150px;
+		}
+		.right{
+			width: 60%;
+			height: 100%;
+			float: right;
+			position: relative;
+			display: block;
+			color: #373737;
+		}
+		/*styling image*/
+		.left img{
+			height: 100%;
+			width: 100%;
+			border-radius: 50%;
+		}
+		/*styling content heading*/
+		.right h1{
+			display: block;
+			padding: 20px;
+			font-size: 80px;
+			font-family: 'IM Fell Great Primer SC', serif;
+		}
+		/*styling blog*/
+		.right .blog{
+			display: block;
+			padding: 10px;
+			margin: 10px;
+			border: 2px solid #e9e7da;
+			border-radius: 20%;
+			height: 980px;
+			font-size: 20px;
+			font-family: cursive;
+			background-color: #e9e7da;
+
+		}
+		/*blog header*/
+		.right .blog h2{
+			text-align: center;
+			padding: 10px;
+		}
+		/*image used in blog*/
+		.blogImage{
+			margin-left: 150px;
+			padding: 20px;
+			padding-top: 0px;
+			width: 50%;
+			height: 40%;
+			display: block;
+
+
+		}
+		.blogImage img{
+			padding: 20px;
+			width: 100%;
+			height: 100%;
+		}
+		 /*styling table and buttons*/
+		table{
+			margin-left: 150px;
+		}
+			table td{
+			padding: 20px;
+
+		}
+		table td button{
+	
+			background-color: #eeaa7b;
+			color: #373737;
+			font-size: 15px;
+			height: 35px;
+			margin-top: 20px;
+			cursor: pointer;	
+			padding: 10px;
+			border-radius: 40%;
+		
+		}
+		/*button hover effects*/
+		table td button:hover{
+			background-color: #e37222;
+			color: white;
+			transition: 0.3s;
+		}
+		.right p{
+			padding: 10px;
+			position: absolute;
+		}
+		/*classes to show/hide content*/
+		.show{
+			display: block;
+		}
+		.hide{
+			display: none;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<!-- navigation section -->
+	<header>
+		<section class="nav">
+			<div class="logo">
+				<h1><a href="../index.html">Simon Poudyal</a></h1>
+				<h3>Front-end Developer in practice</h3>
+				
+			</div>
+			<!-- navigation buttons -->
+			<nav>
+       			<a href="../index.html">Home</a>
+       			<a href="cv.html">CV</a>
+        		<a href="blog.html" style="color: #b82601;">Blog</a>
+       			<a href="research.html">research</a>
+        		<a href="contact.html">contact</a>
+     		 </nav>  
+		</section>
+	</header>
+	<!-- main body section -->
+	<main style="height: 1200px;">
+		<!-- imagedivision -->
+		<div class="left">
+			
+			<img src="../images/blog.png">
+		</div>
+		<div class="right">
+			<h1>Blog</h1>
+			<div class="blog">
+				<h2>How technology has effected daily lives</h2>
+					<div class="buttons">
+						<!-- blog buttons -->
+						<table>
+							<td><button onclick="showIntro()">Introduction</button></td>
+							<td><button onclick="showAdv()">Advantages</button></td>
+							<td><button onclick="showDisadv()">Disadvantages</button></td>
+							<td><button onclick="showVerdict()">Verdict</button></td>
+						</table>
+						<hr>
+					</div>
+					<!-- blog image -->
+				<div class="blogImage">
+					<img src="../images/blog2.png">
+					<!-- text contents to be placed in blog -->
+				</div>
+				<div id="1" class="show">
+					<h4>Introduction</h4>
+					<p> Technology is probably one of the most effective ways that can change a person's living style/ daily life
+						technology has influenced people on many levels, even in our daily lives, people use Alarms or reminders in order 
+						to remind them of the stuff they are supposed to do. People use technology in order to contact with each other, listen to news,
+						listen to music and entertain themselves. Technology (media sites such as Youtube) has also started to become a working-place for people. People earn money by putting up contents that other people (through technology) enjoy to veiw. People now-a-days also earn
+						money by playing games (gamers). Technology has taken the living style of people to an entirely new level.</p> 
+				</div>
+				<div id="2" class="show hide">
+					<h4>Advantages</h4>
+					<p> Technology has changed the life of people in many positive ways. Some of these advantages include increase in speed/agility of
+						work. Normally it would take people hours search for a particular file in an office, but with the help of technology, it only 
+						requires a few button clicks. Technology has also helped in Storage and Sharing. The files which are stored in an office take physical space. Whereas no matter how many files, the physical space taken by a computer is always same, and copies of files are also easily
+						 made with no dificulty at all. One of the biggest advantages of technology is te improvement of Communication. A peoson is able talk face-to-face with a person no matter where they are, doesn't matter if they're halfway around the globe. 
+				</p>
+				</div>
+				<div id="3" class="show hide">
+					<h4>Disadvantages</h4>
+					<p> Like everything else, Technology also has it's dark sides. The disadvantages of technology include Crime and Terrorism. Technology is a platform where
+						 crimes can occor, the people on the internet are very toxic and there are several cases of bulling over the internet and sexual harassment. Privacy Concern is also one of the disadvantages of Technology, There is a chance that someone can easily steal all your private information from the Internet. Technology is also said to have made people anti-social or disconnected from the social world(physically) as people are always on their smartphones or their Computers. Plagarism and Copyright is also the disadvantages of Technology, someone can easily copy/edit the original content of some person in order to create a new content/ copied content for their own benifit.
+				</p>
+				</div>
+				<div id="4" class="show hide">
+					<h4>Verdict</h4>
+					<p>  In my opinion, technology is doing good for the people. This opinion may vary from people to people and from feild to feild. In my opinion, Technology is helping the world develop, all the negative things being done through the use of technology is not to be blamed on the technology but on the people themselves. There may be an arguement that if there was no technology, the people wouldn't be able to do crimes, but in contrary to that, an arguement that if such people didn't exist in the first place, technology would have no bad side to it. Technology has more advantages than disadvantages and it also makes our lives extremely easy. So, I'd suggest it is a good thing.
+				</p>
+				</div>
+
+				
+			</div>
+			
+		</div>
+		
+	</main>
+	<!-- footer section -->
+<footer>
+		<p style="float: left; position: absolute;">Contact me:</p> 
+		<a href="https://www.facebook.com" target="_blank"><img class="footerImage" src="../images/facebook.png"></a>
+		<a href="https://www.instagram.com" target="_blank"><img class="footerImage" src="../images/instagram.png"></a>
+		<a href="https://www.twitter.com" target="_blank"><img class="footerImage" src="../images/twitter.png"></a>
+		<a href="https://www.youtube.com" target="_blank"><img class="footerImage" src="../images/youtube.png"></a>
+
+	<span>&copy; 2020 by Simon Poudyal	</span>
+	</footer>
+
+</body>
+</html>

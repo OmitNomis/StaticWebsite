@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon Poudyal - Contact</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is a portfolio website">
+	<meta name="keywords" content="portfolio, CV, Blog, Research, Contact">
+	<meta name="author" content="Simon Poudyal">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style>
+		/*creating 2 divs for image and text content*/
+		.left{
+			width: 40%;
+			height: 80%;
+			display: block;
+			position: absolute;
+			float: left;
+			font-family: 'IM Fell Great Primer SC', serif;
+		}
+		.right{
+			width: 60%;
+			height: 100%;
+			float: right;
+			position: relative;
+			display: block;
+			font-family: cursive;
+			
+		}
+		.left h1{
+			font-size: 70px;
+			text-align: center;
+			padding: 50px;
+			color: #373737;
+
+		}
+		/*styling image*/
+		.mail{
+			margin-left: 50px;
+			height: 50%;
+			width: 50%;
+			display: flex;
+			flex-flow: column;
+		}
+		.mail img {
+			height: 100%;
+			width: 100%;
+			padding: 50px;
+		}
+		/*styling form*/
+		.form{
+			height: 80%;
+			width: 100%;
+			position: absolute;
+		}
+		form{
+			height: 80%;
+			width: 40%;
+			display: flex;
+			flex-flow: column;
+			margin-left: 100px;
+			padding-top: 20px;
+			padding: 50px;
+			border: 5px solid #cda34f;
+			background-color: #cda34f;
+			border-radius: 82% 18% 82% 18% / 30% 77% 23% 70%;
+			
+		}
+		.right p{
+			padding: 20px;
+		}
+		/*/styling text style to appear in form*/
+		
+		.inputs{
+			width: 100%;
+
+			
+			border-bottom:1px solid gray;
+			outline: none;
+			color: #373737;
+			font-size: 18px;
+		}
+		input{
+			height: 20px;
+			background-color: #e9e7da
+
+		}
+		/*form button*/
+		form .submit{
+			background-color: #e37222;
+			color: #373737;
+			font-size: 20px;
+			letter-spacing: 2px;
+			height: 50px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+		/*form button hover*/
+		form .submit:hover{
+			background-color: #b82601;
+			color: white;
+			transition: 0.3s;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- navigation section -->
+	<header>
+		<section class="nav">
+			<div class="logo">
+				<h1><a href="../index.html">Simon Poudyal</a></h1>
+				<h3>Front-end Developer in practice</h3>
+				
+			</div>
+			<nav>
+       			<a href="../index.html">Home</a>
+       			<a href="cv.html">CV</a>
+        		<a href="blog.html">Blog</a>
+       			<a href="research.html">research</a>
+        		<a href="contact.html" style="color: #b82601;">contact</a>
+     		 </nav>   
+		</section>
+	</header>
+	<!-- main body section -->
+
+	<main>
+		<!-- div for image -->
+		<div class="left">
+			<h1>CONTACT</h1>
+			<div class="mail">
+				<img src="../images/contact.png">
+			</div>
+		</div>
+		<div class="right">
+			<p style="font-size: 20px; margin-top: 50px; color: #373737; display: block; margin-left: 70px;">Looking forward to answering your email</p>
+			<!-- form division -->
+			<section class="form">
+   
+    			<form name ="form1" onsubmit="validateForm()">
+				<p>Full name: <input class="inputs" type="text" name="name" placeholder="Full Name" autocomplete="off"></p>
+				<p>e-mail: <input class="inputs" type="email" name="email" placeholder="abc@xyz.com" autocomplete="off"></p>
+				<p>Gender: <input type="radio" name="gender" value="male" checked> Male 
+				<input type="radio" name="gender" value="female"> Female </p>
+				<p>Message: <br><textarea class="inputs" name="message" placeholder="Enter Message" style="background-color: #e9e7da"></textarea></p>
+				<input class="inputs submit" type="submit"  value="Send">
+			</form>
+    
+  			
+  			</section>
+ 
+			
+		</div>
+
+	</main>
+	<!-- footer -->
+	<footer>
+		<p style="float: left; position: absolute;">Contact me:</p> 
+		<a href="https://www.facebook.com" target="_blank"><img class="footerImage" src="../images/facebook.png"></a>
+		<a href="https://www.instagram.com" target="_blank"><img class="footerImage" src="../images/instagram.png"></a>
+		<a href="https://www.twitter.com" target="_blank"><img class="footerImage" src="../images/twitter.png"></a>
+		<a href="https://www.youtube.com" target="_blank"><img class="footerImage" src="../images/youtube.png"></a>
+
+	<span>&copy; 2020 by Simon Poudyal	</span>
+	</footer>
+
+	<!-- Javascript for form validation -->
+	<script>
+			function validateForm() {
+				//assigning variables and storing corresponding values from the form
+				var name = document.forms["form1"]["name"].value; 
+				var email = document.forms["form1"]["email"].value;
+				var gender = document.forms["form1"]["gender"].value;
+				var message = document.forms["form1"]["message"].value;
+
+				//if... else if...else  conditions for alerting missing input feilds
+
+				if (name == "" && email == "" && message == ""){
+					alert("All fields are empty, Pease fill the form.");
+				}
+				else if (name == "" && email == ""){
+					alert("First name and e-mail are empty, Pease fill the form.");
+				}
+				else if (name == "" && message == ""){
+					alert("First name and message are empty, Pease fill the form.");
+				}
+				else if (email == "" && message == ""){
+					alert(" e-mail and message are empty, Pease fill the form.");
+				}
+
+				else if (name == ""){
+					alert("Please provide us with your First name.")
+				}
+				else if (email == ""){
+					alert("Please provide us with your e-mail .")
+				}
+				else if (message == ""){
+					alert("Please provide us with your Message.")
+				}
+				
+				
+				else {
+					alert("Thank you for your submission");
+				}
+			}
+	</script>
+</body>
+</html>

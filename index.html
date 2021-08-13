@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon Poudyal - Home</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is a portfolio website">
+	<meta name="keywords" content="portfolio, CV, Blog, Research, Contact">
+	<meta name="author" content="Simon Poudyal">
+	<!-- linking style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- linking javascript file -->
+	<script src="javascript/javascript.js"></script>
+	<style>
+		/*styling divs for image and text content*/
+.left{
+	width: 40%;
+	height: 80%;
+	display: block;
+	position: absolute;
+	float: left;
+}
+
+.left img{
+	height: 100%;
+	width: 100%;
+}
+.right{
+	width: 60%;
+	height: 100%;
+	float: right;
+	position: relative;
+	display: block;
+	font-family: 'IM Fell Great Primer SC', serif;
+	color: #373737;
+}
+/*styling content heading and sub heading*/
+.right h1{
+	display: block;
+	padding: 20px;
+	font-size: 80px;
+}
+.right h3{
+	text-align: center;
+	font-size: 50px;
+
+}
+/*styling content buttons*/
+.links{
+	height:100px;
+	margin: 20px 5px 5px 20px;
+	padding: 50px;
+	display: block;
+
+}
+.links a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	text-transform: uppercase;
+	border: 2px solid #eeaa7b;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 50px;
+	background-color: #eeaa7b;
+
+}
+/*hover effect for buttons*/
+
+.links a:hover{
+	color: white;
+	background-color: #e37222;
+	border: 2px solid #e37222; 
+	transition: all 0.3s linear;
+}
+
+.right p{
+	font-family:cursive;
+	display: block;
+	height: 100px;
+	width: 100%;
+	font-size: 20px;
+	position: absolute;
+}
+/*media styling to make page responsive*/
+@media screen and (max-width:1320px){
+	.links a {
+		padding: 40px;
+	}
+
+	.right p {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width:1220px){
+	.links a {
+		padding: 30px;
+	}
+}
+@media screen and (max-width:1120px){
+	.links a {
+		padding: 20px;
+	}
+}
+@media screen and (max-width:1020px){
+	.links a {
+		font-size: 15px;
+		padding:15px;
+	}
+}
+
+	</style>
+
+</head>
+<body>
+	<!-- navigation section -->
+	<header>
+		<section class="nav">
+			<div class="logo">
+				<h1><a href="index.html">Simon Poudyal</a></h1>
+				<h3>Front-end Developer in practice</h3>
+				
+			</div>
+			<!-- navigation buttons -->
+			<nav>
+       			<a href="index.html" style="color: #b82601;">Home</a>
+       			<a href="pages/cv.html">CV</a>
+        		<a href="pages/blog.html">Blog</a>
+       			<a href="pages/research.html">research</a>
+        		<a href="pages/contact.html">contact</a>
+     		 </nav>   
+		</section>
+	</header>
+	<!-- main body section -->
+	<main>
+		<!-- image division -->
+		<div class="left">
+			<div id="img" style="height: 100%; width: 100%;">
+				<img src="images/image4.png">
+			</div>
+			
+		</div>
+		<!-- content division -->
+		<div class="right">
+			<h1>Hello,</h1>
+			<h3>a bit about me</h3>
+			<!-- homepage buttons -->
+			<div class="links">
+				<a href="pages/cv.html">CV</a>
+				<a href="pages/blog.html">Blog</a>
+				<a href="pages/contact.html">Contact me</a>
+			</div>	
+			<p style="font-size: 30px; text-align: center;">I am an Information Technology student studying about web development and styling. This website is my first Project. <br> Click the above buttons to navigate through my website.</p>
+		</div>
+
+
+	</main>
+	<!-- footer section -->
+	<footer>
+		<p style="float: left; position: absolute;">Contact me:</p> 
+		<a href="https://www.facebook.com" target="_blank"><img class="footerImage" src="images/facebook.png"></a>
+		<a href="https://www.instagram.com" target="_blank"><img class="footerImage" src="images/instagram.png"></a>
+		<a href="https://www.twitter.com" target="_blank"><img class="footerImage" src="images/twitter.png"></a>
+		<a href="https://www.youtube.com" target="_blank"><img class="footerImage" src="images/youtube.png"></a>
+
+	<span>&copy; 2020 by Simon Poudyal	</span>
+	</footer>
+
+	<!-- script for image slider -->
+	<script>
+
+    
+
+    var images = ['image2.png', 'image3.png', 'image4.png']; //creating array of images
+
+    var x = 0; //declaring variable
+
+    var imgs = document.getElementById('img'); //getting value from 'img' id
+
+    setInterval(slider, 5000); //setting function and interval
+
+
+    function slider() { 
+
+      if (x < images.length) { //running loop to set next image
+        x = x + 1; 
+      } 
+      else {
+        x = 1; //returning to first image if loop ends
+      }
+
+
+      imgs.innerHTML = "<img src= images/"+images[x - 1]+">"; //changing HTML tag to replace image
+
+
+
+    }
+
+
+
+  </script>
+
+</body>
+</html>
